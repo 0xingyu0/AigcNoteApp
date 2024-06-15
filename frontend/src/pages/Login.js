@@ -25,7 +25,7 @@ const Login = () => {
     <Container component="main" maxWidth="xs">
       <div>
         <Typography component="h1" variant="h5">
-          Sign in
+          Login
         </Typography>
         <form onSubmit={handleSubmit}>
           <TextField
@@ -55,7 +55,7 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <Button type="submit" fullWidth variant="contained" color="primary">
-            Sign In
+            Login
           </Button>
         </form>
       </div>

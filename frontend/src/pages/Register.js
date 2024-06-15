@@ -12,7 +12,7 @@ const Register = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post('/api/auth/register', { username, password, email });
+      await axios.post('http://localhost:8080/api/auth/register', { username, password, email });
       navigate('/login'); // 注册成功后重定向到登录页面
     } catch (error) {
       console.error('Registration failed:', error);
